@@ -6,6 +6,8 @@ COPY src/api/ .
 
 COPY models/trained/*.pkl models/trained/
 
+COPY requirements.txt .
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8888
